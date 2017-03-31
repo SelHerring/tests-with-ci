@@ -18,13 +18,13 @@ public class AppTestRemoteDriver {
     public void simpleTest() {
         WebDriver driver = null;
         try {
-            driver = new RemoteWebDriver(new URL("http://localhost:32768/wd/hub"),
-                    DesiredCapabilities.firefox());
+            driver = new RemoteWebDriver(new URL("http://localhost:32771/wd/hub/"),
+                    DesiredCapabilities.chrome());
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
 
-        String eTitle = "Meet Guru99";
+        String eTitle = "Meet Guru9ыв9";
         String aTitle = "";
 
         // запустить firefox и перейти по адресу
@@ -38,7 +38,7 @@ public class AppTestRemoteDriver {
         assertEquals(aTitle, eTitle);
 
         // закрываем окно браузера
-        driver.close();
+        driver.quit();
     }
 }
 
