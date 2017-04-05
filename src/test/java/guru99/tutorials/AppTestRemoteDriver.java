@@ -1,5 +1,6 @@
 package guru99.tutorials;
 
+import org.omg.CosNaming.NamingContextPackage.NotFound;
 import org.openqa.selenium.NotFoundException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -34,10 +35,12 @@ public class AppTestRemoteDriver {
         String eTitle = "Meet Guru99";
         String aTitle = "";
 
-        // запустить firefox и перейти по адресу
+        // запустить Chrome и перейти по адресу
         driver.get("http://www.guru99.com/");
+
         // разворачивает окно браузера
         driver.manage().window().maximize();
+
         // получить значение у тайтла страницы
         aTitle = driver.getTitle();
 
