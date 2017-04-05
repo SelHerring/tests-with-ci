@@ -1,6 +1,5 @@
 package guru99.tutorials;
 
-import org.omg.CosNaming.NamingContextPackage.NotFound;
 import org.openqa.selenium.NotFoundException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,9 +7,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
 
-import java.io.File;
-import java.net.MalformedURLException;
-import java.net.URL;
 
 import static org.testng.Assert.assertEquals;
 
