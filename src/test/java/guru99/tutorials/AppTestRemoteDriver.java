@@ -37,7 +37,7 @@ public class AppTestRemoteDriver {
         // запустить firefox и перейти по адресу
         driver.get("http://www.guru99.com/");
         // разворачивает окно браузера
-        //driver.manage().window().maximize();
+        driver.manage().window().maximize();
         // получить значение у тайтла страницы
         aTitle = driver.getTitle();
 
