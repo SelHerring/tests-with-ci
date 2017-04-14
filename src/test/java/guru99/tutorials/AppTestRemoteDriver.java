@@ -28,7 +28,7 @@ public class AppTestRemoteDriver {
             e.printStackTrace();
         }
 
-        String eTitle = "Meet Guru99";
+        String eTitle = "Meet Guru99 - Free Training Tutorials & Video for IT Courses";
         String aTitle = "";
 
         // запустить Chrome и перейти по адресу
